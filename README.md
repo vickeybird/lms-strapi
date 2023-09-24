@@ -5,19 +5,18 @@ A learning management implementation using Strapi
 I got chat gpt to generate structure as following
 
 User
+  User information (e.g., name, email, password)
+  Role (Student, Instructor, Admin)
+  Enrolled Courses (Many-to-Many Relationship)
 
-User information (e.g., name, email, password)
-Role (Student, Instructor, Admin)
-Enrolled Courses (Many-to-Many Relationship)
 Course
+  Course title
+  Course description
+  Instructor (User Relationship)
+  Students Enrolled (Many-to-Many Relationship)
+  Lessons (One-to-Many Relationship)
 
-Course title
-Course description
-Instructor (User Relationship)
-Students Enrolled (Many-to-Many Relationship)
-Lessons (One-to-Many Relationship)
 Lesson
-
 Lesson title
 Lesson content (text, video, or other media)
 Course (Many-to-One Relationship)
